@@ -35,3 +35,19 @@ console.log(test('d', 'ad'));
 console.log(test('d', 'a'));
 console.log(test('d', 'd'));
 console.log(test('ad', 'd'));
+
+
+function repeatEnd(str, n){
+    var result = "";
+    var repeat = "";
+    for(var i = str.length - n; i < str.length; i++){
+        repeat += str[i];
+    }
+    console.log(repeat);
+    for(var j = 0; j < n; j++){
+        result += repeat;
+    }
+    return result;
+}
+
+console.log(repeatEnd("hello", 3));
