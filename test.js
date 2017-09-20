@@ -43,7 +43,6 @@ function repeatEnd(str, n){
     for(var i = str.length - n; i < str.length; i++){
         repeat += str[i];
     }
-    console.log(repeat);
     for(var j = 0; j < n; j++){
         result += repeat;
     }
